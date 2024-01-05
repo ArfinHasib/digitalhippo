@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import MaxWidthWrapper from './MaxWidthWrapper';
+import { Icons } from './Icons';
 
 const Navbar = () => {
    return (
@@ -11,7 +12,9 @@ const Navbar = () => {
                      {/* TODO: Mobile Nav */}
 
                      <div className='ml-4 flex lg:ml-0'>
-                        <Link href='/'></Link>
+                        <Link href='/'>
+                           <Icons.logo className='h-10 w-10' />
+                        </Link>
                      </div>
                   </div>
                </div>
