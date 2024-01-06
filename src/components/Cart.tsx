@@ -8,8 +8,11 @@ import {
    SheetTitle,
    SheetTrigger,
 } from './ui/sheet';
+import { Separator } from './ui/separator';
 
 const Cart = () => {
+   const itemCount = 0
+
    return (
       <div>
          <Sheet>
@@ -26,6 +29,19 @@ const Cart = () => {
                <SheetHeader className='space-y-2.5 pr-6'>
                   <SheetTitle>Cart (0)</SheetTitle>
                </SheetHeader>
+               {itemCount > 0 ? (
+                  <>
+                     <div className='flex w-full flex-col pr-6'>
+                        {/* TODO: cart logic */}
+                        cart items
+                     </div>
+                     <div className='space-y-4 pr-6'>
+                        <Separator />
+                     </div>
+                  </>
+               ) : (
+
+               )}
             </SheetContent>
          </Sheet>
       </div>
