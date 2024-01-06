@@ -11,7 +11,7 @@ import {
 import { Separator } from './ui/separator';
 
 const Cart = () => {
-   const itemCount = 0
+   const itemCount = 1;
 
    return (
       <div>
@@ -37,10 +37,20 @@ const Cart = () => {
                      </div>
                      <div className='space-y-4 pr-6'>
                         <Separator />
+                        <div className='space-y-1.5 pr-6'>
+                           <div className='flex'>
+                              <span className='flex-1'>Shipping</span>
+                              <span>Free</span>
+                           </div>
+                           <div className='flex'>
+                              <span className='flex-1'>Transaction Fee</span>
+                              <span>1</span>
+                           </div>
+                        </div>
                      </div>
                   </>
                ) : (
-
+                  <p>No More</p>
                )}
             </SheetContent>
          </Sheet>
